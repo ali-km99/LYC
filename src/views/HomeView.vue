@@ -204,7 +204,7 @@ import { slides2 } from '@/components/EventCard'
           v-motion-slide-visible-top
           :delay="200"
           :duration="1500"
-          src="../assets/imeges/typs2.JPG"
+          src="../assets/imeges/typs2.jpg"
           class="rounded-lg bg-gray-100"
         />
         <img
