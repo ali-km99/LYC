@@ -152,7 +152,7 @@ import { slides2 } from '@/components/EventCard'
             <div class="grid grid-cols-2 w-full px-8">
               <img
                 v-if="i === 0"
-                src="../assets/imeges/IMG_6183.JPG"
+                src="../assets/imeges/IMG_6183.jpg"
                 alt=""
                 class="mx-auto h-96 object-cover rounded-lg shadow-lg"
               />
@@ -164,7 +164,7 @@ import { slides2 } from '@/components/EventCard'
               />
               <img
                 v-if="i === 2"
-                src="../assets/imeges/image6.JPG"
+                src="../assets/imeges/image6.jpg"
                 alt=""
                 class="mx-auto h-96 object-cover rounded-lg shadow-lg"
               />
