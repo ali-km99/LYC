@@ -214,13 +214,13 @@ import { slides2 } from '@/components/EventCard'
           src="../assets/imeges/typs4.JPG"
           class="rounded-lg bg-gray-100"
         />
-        <img
+        <!-- <img
           v-motion-slide-visible-bottom
           :delay="600"
           :duration="1500"
           src="../assets/imeges/typs6.jpg"
           class="rounded-lg bg-gray-100"
-        />
+        /> -->
         <img
           v-motion-slide-visible-bottom
           :delay="600"
