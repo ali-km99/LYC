@@ -164,7 +164,7 @@ import { slides2 } from '@/components/EventCard'
               />
               <img
                 v-if="i === 2"
-                src="../assets/imeges/image6.jpg"
+                src="../assets/imeges/image6.JPG"
                 alt=""
                 class="mx-auto h-96 object-cover rounded-lg shadow-lg"
               />
@@ -204,14 +204,14 @@ import { slides2 } from '@/components/EventCard'
           v-motion-slide-visible-top
           :delay="200"
           :duration="1500"
-          src="../assets/imeges/typs2.jpg"
+          src="../assets/imeges/typs2.JPG"
           class="rounded-lg bg-gray-100"
         />
         <img
           v-motion-slide-visible-top
           :delay="400"
           :duration="1500"
-          src="../assets/imeges/typs4.jpg"
+          src="../assets/imeges/typs4.JPG"
           class="rounded-lg bg-gray-100"
         />
         <img
