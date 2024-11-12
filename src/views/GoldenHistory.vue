@@ -51,9 +51,16 @@
     </div>
   </nav>
 
-  <header class="bgGR text-white text-center pt-10 pb-20">
-    <h1 class="text-3xl font-bold">التاريخ الذهبي - نادي الليبي لليخوت</h1>
-    <p class="mt-2 text-lg">استكشف إنجازاتنا على مر السنين</p>
+  <header class="bg-white text-blue-600 text-center pt-10 pb-20">
+    <h1
+      class="text-3xl font-bold text-blue-600 flex justify-center items-center"
+    >
+      <span
+        ><img src="../assets/imeges/winner.png" width="60px" alt="" class="m-2"
+      /></span>
+      التاريخ الذهبي - نادي الليبي لليخوت
+    </h1>
+    <p class="mt-2 text-lg text-blue-500">استكشف إنجازاتنا على مر السنين</p>
   </header>
   <div class="container mx-auto mt-10 px-4">
     <div class="relative">

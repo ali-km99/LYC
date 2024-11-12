@@ -1,61 +1,11 @@
 <script setup>
 import { slides2 } from '@/components/EventCard'
+import Navbar from '@/components/navbar.vue'
 </script>
 
 <template>
   <div class="body w-full h-[951px] bg-cover">
-    <nav class="h-20 w-full bg-white/10 backdrop-blur-sm sticky top-0">
-      <div class="flex items-center justify-between">
-        <img
-          src="../assets/imeges/emptylogo.png"
-          width="60"
-          alt="main-logo"
-          class="m-2 ml-10"
-        />
-        <!-- list  -->
-        <div class="">
-          <ul class="flex flex-row gap-10 text-white">
-            <RouterLink :to="{ name: 'home' }">
-              <li
-                class="hover:text-[#394A98] hover:scale-110 duration-150 transition hover:cursor-pointer"
-              >
-                الرئيسي
-              </li>
-            </RouterLink>
-            <li
-              class="hover:text-[#394A98] hover:scale-110 duration-150 transition"
-            >
-              معرض الصور
-            </li>
-            <li
-              class="hover:text-[#394A98] hover:scale-110 duration-150 transition"
-            >
-              خدماتنا
-            </li>
-            <RouterLink :to="{ name: 'GoldenHistory' }">
-              <li
-                class="hover:text-[#394A98] hover:scale-110 duration-150 transition"
-              >
-                السجل الذهبي
-              </li>
-            </RouterLink>
-            <li
-              class="hover:text-[#394A98] hover:scale-110 duration-150 transition"
-            >
-              تواصل معنا
-            </li>
-          </ul>
-        </div>
-        <!-- list -->
-
-        <div class="flex">
-          <img src="../assets/lang.svg" width="20" alt="" />
-          <div>AR</div>
-          <img src="../assets/arrowDown.svg" width="20" alt="" />
-        </div>
-      </div>
-    </nav>
-
+    <Navbar />
     <div
       v-motion-slide-visible-bottom
       :delay="200"
@@ -84,13 +34,7 @@ import { slides2 } from '@/components/EventCard'
   <section class="bg-white h-[25vh] py-10 flex justify-around mx-4">
     <img
       class="hover:scale-105 duration-300"
-      width="150x"
-      src="../assets/imeges/COM/IMG-20241029-WA0003.jpg"
-      alt=""
-    />
-    <img
-      class="hover:scale-105 duration-300"
-      width="150px"
+      width="180px"
       src="../assets/imeges/COM/IMG-20241029-WA0005.jpg"
       alt=""
     />
@@ -102,7 +46,7 @@ import { slides2 } from '@/components/EventCard'
     />
     <img
       class="hover:scale-105 duration-300"
-      width="100px"
+      width="120px"
       src="../assets/imeges/COM/IMG-20241029-WA0002.jpg"
       alt=""
     />
@@ -204,7 +148,7 @@ import { slides2 } from '@/components/EventCard'
           v-motion-slide-visible-top
           :delay="200"
           :duration="1500"
-          src="../assets/imeges/typs2.jpg"
+          src="../assets/imeges/typs2.JPG"
           class="rounded-lg bg-gray-100"
         />
         <img
@@ -214,13 +158,13 @@ import { slides2 } from '@/components/EventCard'
           src="../assets/imeges/typs4.JPG"
           class="rounded-lg bg-gray-100"
         />
-        <!-- <img
+        <img
           v-motion-slide-visible-bottom
           :delay="600"
           :duration="1500"
           src="../assets/imeges/typs6.jpg"
           class="rounded-lg bg-gray-100"
-        /> -->
+        />
         <img
           v-motion-slide-visible-bottom
           :delay="600"
@@ -251,7 +195,7 @@ import { slides2 } from '@/components/EventCard'
             :duration="1500"
           >
             <h2 class="font-semibold text-blue-600 text-lg">
-              صنف الليزر ستاندرد - Laser Standard
+              صنف الليزر ستاندرد - ILCA 7
             </h2>
             <p class="mt-2 text-sm text-gray-400">
               هــو قــارب شــراعي فــردي وهــو القــارب المعتمـد أولمبيـا عمـر
@@ -315,7 +259,7 @@ import { slides2 } from '@/components/EventCard'
             :delay="600"
             :duration="1500"
           >
-            <h2 class="font-semibold text-blue-600">صنف الليزر - 4.7 Laser</h2>
+            <h2 class="font-semibold text-blue-600">صنف الليزر - ILCA 4</h2>
             <p class="mt-2 text-sm text-gray-400">
               هــو قــارب شــراعي فــردي وهــو يعــد أول قــارب فــي فئــة
               الشــباب و عمــر الرياضــي فيـه مـن سـن 15 سـنة إلـى سـن 17 سـنة ،
@@ -330,7 +274,7 @@ import { slides2 } from '@/components/EventCard'
             :duration="1500"
           >
             <h2 class="font-semibold text-blue-600">
-              صنف الليزر راديال - Radial Laser
+              صنف الليزر راديال - ILCA 6
             </h2>
             <p class="mt-2 text-sm text-gray-400">
               هــو قــارب شــراعي فــردي وهــو يعــد أول قــارب فــي فئــة

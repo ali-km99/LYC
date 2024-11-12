@@ -1,119 +1,161 @@
-<script></script>
+<script setup lang="ts">
+import Navbar from '@/components/navbar.vue'
+
+const programs = [
+  {
+    title: 'تدريب السباحة',
+    count: '90 متدرب',
+    description: 'برامج تدريبية متخصصة في السباحة',
+  },
+  {
+    title: 'تدريب قوارب  الشراع',
+    count: '60 متدرب',
+    description: 'برامج متقدمة في رياضة الشراع',
+  },
+  {
+    title: 'تدريب الألواح الشراعية',
+    count: '12 متدرب',
+    description: 'برامج تدريبي في رياضة الألواح الشراعية',
+  },
+  {
+    title: 'تدريب التجديف  ',
+    count: '120 متدرب',
+    description: 'برامج متقدمة في رياضة قوارب التجديف',
+  },
+]
+
+const objectives = [
+  'إعداد و تدريب الشباب',
+  'تشكيل أوقات الشباب ببرامج تربوية وثقافية وترفيهية وما يعود عليهم بالفوائد النفسية والوطنية والفكرية والاجتماعية والبدنية والصحية',
+  'نشر الرياضة البحرية وتحفيز كافة شرائح المجتمع على ممارسة الرياضات البحرية',
+  'اكتشاف و تنمية المواهب الرياضية، وتكوين وإعداد الفرق الرياضية للألعاب الجماعية والفردية والمشاركة في المسابقات',
+]
+</script>
 
 <template>
-  <!-- العنوان الرئيسي -->
-
-  <body class="bg-gray-100 font-sans antialiased">
-    <!-- العنوان الرئيسي -->
-    <header class="bg-[#3B82F6] text-white text-center py-6">
-      <h1 class="text-3xl font-bold">التاريخ الذهبي - نادي الأشرعة البحرية</h1>
-      <p class="mt-2 text-lg">استكشف إنجازاتنا على مر السنين</p>
-    </header>
-
-    <!-- خط زمني للأحداث -->
-    <main class="container mx-auto mt-10 px-4">
-      <div class="relative">
-        <div
-          class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#3B82F6]"
-        ></div>
-
-        <!-- الحدث الأول -->
-        <div class="mb-10 flex items-center w-full">
-          <div class="w-1/2 pr-6 text-right fade-in" id="event1">
-            <span
-              class="bg-[#3B82F6] text-white font-semibold py-1 px-3 rounded-lg"
-              >1990</span
-            >
-            <h2 class="text-2xl font-semibold text-[#3B82F6]">إنشاء النادي</h2>
-            <p class="text-gray-700 mt-2">
-              تم إنشاء النادي في عام 1990 بهدف نشر رياضة الأشرعة البحرية في
-              المنطقة وتحقيق النجاح على الصعيد المحلي والعالمي.
-            </p>
-          </div>
-          <div class="w-1/2 pl-6 fade-in-right" id="image1">
-            <img
-              src="../assets/imeges/image2.png"
-              alt="صورة لإنشاء النادي"
-              class="w-full h-64 object-cover rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-
-        <!-- الحدث الثاني -->
-        <div class="mb-10 flex items-center w-full flex-row-reverse">
-          <div class="w-1/2 pl-6 text-left fade-in" id="event2">
-            <span
-              class="bg-[#3B82F6] text-white font-semibold py-1 px-3 rounded-lg"
-              >2005</span
-            >
-            <h2 class="text-2xl font-semibold text-[#3B82F6]">
-              أول بطولة عالمية
-            </h2>
-            <p class="text-gray-700 mt-2">
-              حقق النادي أول فوز له في بطولة عالمية عام 2005، مما أسهم في رفع
-              اسم النادي دولياً وجعل اللاعبين يحظون بتقدير عالمي.
-            </p>
-          </div>
-          <div class="w-1/2 pr-6 fade-in-right" id="image2">
-            <img
-              src="../assets/imeges/image1.png"
-              alt="صورة من البطولة العالمية"
-              class="w-full h-64 object-cover rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-
-        <!-- الحدث الثالث -->
-        <div class="mb-10 flex items-center w-full">
-          <div class="w-1/2 pr-6 text-right fade-in" id="event3">
-            <span
-              class="bg-[#3B82F6] text-white font-semibold py-1 px-3 rounded-lg"
-              >2023</span
-            >
-            <h2 class="text-2xl font-semibold text-[#3B82F6]">آخر إنجاز</h2>
-            <p class="text-gray-700 mt-2">
-              في عام 2023، حقق النادي إنجازاً آخر في بطولة دولية، مما يُعد
-              تتويجاً لجهود السنوات العديدة في تطوير مهارات اللاعبين.
-            </p>
-          </div>
-          <div class="w-1/2 pl-6 fade-in-right" id="image3">
-            <img
-              src="../assets/imeges/image3.png"
-              alt="صورة للإنجاز الأخير"
-              class="w-full h-64 object-cover rounded-lg shadow-lg"
-            />
-          </div>
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section with Fixed Background -->
+    <div class="hero-section relative mb-8">
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/40 to-[#3B82F6]/50"
+      ></div>
+      <Navbar />
+      <div class="container mx-auto px-4 py-20 relative z-10">
+        <div class="text-white text-center">
+          <h1 class="text-5xl font-bold mb-6">رحلة الريادة</h1>
+          <p class="text-xl leading-relaxed">
+            منذ عام 2015، نحن نقود مسيرة الرياضات البحرية في ليبيا
+          </p>
         </div>
       </div>
-    </main>
+    </div>
 
-    <!-- تذييل الصفحة -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- History Section -->
+      <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <h2 class="text-2xl font-bold text-blue-900 mb-6 text-right">قصتنا</h2>
+        <div class="prose prose-lg text-right space-y-6">
+          <p class="text-gray-700">
+            في أواخر عام 2015 راودت السيد محمود عبدالرزاق بن لطيف فكرة تأسيس
+            نادي يمارس رياضة الشراع. وعلى فور تم دعوة مجموعة من المدربين واولياء
+            امور رياضيين وخبراء في الرياضات والالعاب البحرية.
+          </p>
+          <p class="text-gray-700">
+            بعد الاتصال على الفرق في مايو 2016 و انطلقت اللجنة التأسيسية برئاسة
+            السيد هاشم عبدالرزاق الزرقاني، حيث تم الاجتماع عليه لقيادة حشد إدارة
+            النادي للعمل على تنفيذ الأهداف النادي.
+          </p>
+        </div>
+      </div>
 
-    <!-- JavaScript لتفعيل الأنيميشن عند التمرير -->
-  </body>
+      <!-- Programs Section -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div
+          v-for="(program, index) in programs"
+          :key="index"
+          class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl flex justify-between transition-shadow"
+        >
+          <div>
+            <h3 class="text-3xl font-bold text-blue-900 mb-3">
+              {{ program.title }}
+            </h3>
+            <div class="text-2xl font-bold text-blue-600 mb-2">
+              {{ program.count }}
+            </div>
+            <p class="text-gray-600">{{ program.description }}</p>
+          </div>
+          <img
+            v-if="index === 0"
+            width="120"
+            src="../assets/GIF/swimming.gif"
+            alt=""
+          />
+          <img
+            v-if="index === 1"
+            width="120"
+            src="../assets/GIF/sail.gif"
+            alt=""
+          />
+          <img
+            v-if="index === 2"
+            width="120"
+            src="../assets/GIF/sailing.gif"
+            alt=""
+          />
+          <img
+            v-if="index === 3"
+            width="120"
+            src="../assets/GIF/paddle.gif"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Objectives Section -->
+      <div dir="rtl" class="bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-bold text-blue-900 mb-6">أهدافنا</h2>
+        <ul class="space-y-4">
+          <li
+            v-for="objective in objectives"
+            :key="objective"
+            class="flex space-x-3 text-right"
+          >
+            <span class="text-blue-600">⚓</span>
+            <span class="text-gray-700">{{ objective }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
-<style>
-/* تأثيرات الحركة */
-.fade-in {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition:
-    opacity 2s ease,
-    transform 2s ease;
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap');
+
+div {
+  font-family: 'Noto Sans Arabic', sans-serif;
 }
-.fade-in-right {
-  opacity: 0;
-  transform: translateX(50px);
-  transition:
-    opacity 2s ease,
-    transform 2s ease;
+
+/* .prose {
+  max-width: none;
+} */
+
+.hero-section {
+  background-image: url('../assets/imeges/image9.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 900px;
 }
-.fade-in.show {
-  opacity: 1;
-  transform: translateX(0);
+
+/* Ensure proper RTL layout for flex items */
+.flex {
+  gap: 0.75rem;
 }
-.fade-in-right.show {
-  opacity: 1;
-  transform: translateX(0);
+
+.flex span:first-child {
+  margin-right: 0;
+  margin-left: 0.75rem;
 }
 </style>
