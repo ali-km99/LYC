@@ -96,7 +96,7 @@ import Navbar from '@/components/navbar.vue'
             <div class="grid grid-cols-2 w-full px-8">
               <img
                 v-if="i === 0"
-                src="../assets/imeges/IMG_6183.JPG"
+                src="../assets/imeges/IMG_6183.jpg"
                 alt=""
                 class="mx-auto h-96 object-cover rounded-lg shadow-lg"
               />
@@ -108,7 +108,7 @@ import Navbar from '@/components/navbar.vue'
               />
               <img
                 v-if="i === 2"
-                src="../assets/imeges/image6.JPG"
+                src="../assets/imeges/image6.jpg"
                 alt=""
                 class="mx-auto h-96 object-cover rounded-lg shadow-lg"
               />
@@ -148,14 +148,14 @@ import Navbar from '@/components/navbar.vue'
           v-motion-slide-visible-top
           :delay="200"
           :duration="1500"
-          src="../assets/imeges/typs2.JPG"
+          src="../assets/imeges/typs2.jpg"
           class="rounded-lg bg-gray-100"
         />
         <img
           v-motion-slide-visible-top
           :delay="400"
           :duration="1500"
-          src="../assets/imeges/typs4.JPG"
+          src="../assets/imeges/typs4.jpg"
           class="rounded-lg bg-gray-100"
         />
         <img
