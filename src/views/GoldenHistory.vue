@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-import Navbar from '@/components/Navbar.vue'
+import Navbar from '@/components/NavBar.vue'
 import EventCard from '../components/EventCard.vue'
 import SmallNavbar from '@/components/smallNavbar.vue'
 
