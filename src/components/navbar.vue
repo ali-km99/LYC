@@ -48,9 +48,11 @@
         <!-- list -->
 
         <div class="flex">
+          <select>
+            <option>عربي</option>
+            <option>EN</option>
+          </select>
           <img src="../assets/lang.svg" width="20" alt="" />
-          <div>AR</div>
-          <img src="../assets/arrowDown.svg" width="20" alt="" />
         </div>
       </div>
     </nav>

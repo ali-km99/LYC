@@ -1,22 +1,22 @@
 <template>
   <div
-    :class="`flex ${reversed ? 'flex-row-reverse' : ''} gap-6 items-center my-16`"
+    :class="`flex flex-col lg:flex-row ${props.reversed ? 'lg:flex-row-reverse' : ''} gap-6 items-center my-16`"
   >
     <!-- قسم النص -->
     <div
       v-motion-slide-visible-bottom
       :delay="200"
       :duration="1500"
-      :class="`w-1/2 ${reversed ? 'text-end' : 'text-end'}`"
+      :class="`w-full lg:w-1/2 ${props.reversed ? 'text-end' : 'text-end'}`"
     >
       <p
         v-motion
-        :initial="{ opacity: 0, x: reversed ? 200 : -200 }"
+        :initial="{ opacity: 0, x: props.reversed ? 200 : -200 }"
         :enter="{ opacity: 1, x: 220, scale: 1 }"
         :variants="{ custom: { scale: 2 } }"
         :delay="200"
         :duration="2000"
-        class="text-white font-semibold bg-[#3B82F6] py-2 rounded-lg flex w-16 justify-center"
+        class="text-white font-semibold bg-[#3B82F6] py-2 rounded-lg flex w-16 justify-center mx-auto lg:mx-0"
       >
         {{ event.year }}
       </p>
@@ -26,18 +26,20 @@
         :variants="{ custom: { scale: 2 } }"
         :delay="100"
         :duration="1500"
-        class="text-2xl font-semibold text-[#3B82F6] mt-2"
+        class="text-xl lg:text-2xl font-semibold text-[#3B82F6] mt-2 text-center lg:text-left"
       >
         {{ event.title }}
       </h2>
-      <p class="text-gray-700 mt-2">{{ event.description }}</p>
+      <p class="text-gray-700 mt-2 text-center lg:text-left">
+        {{ event.description }}
+      </p>
     </div>
 
     <!-- قسم الصور -->
     <div
-      class="flex space-x-4 w-1/2"
+      class="flex space-x-4 w-full lg:w-1/2 mt-4 lg:mt-0"
       v-motion
-      :initial="{ opacity: 0, y: reversed ? 100 : -100 }"
+      :initial="{ opacity: 0, y: props.reversed ? 100 : -100 }"
       :enter="{ opacity: 1, y: 0, scale: 1 }"
       :delay="200"
       :duration="1200"
@@ -49,8 +51,8 @@
         v-for="(image, index) in event.images"
         :key="index"
         :src="image"
-        :alt="`صورة لـ ${props.event}`"
-        class="w-full h-64 object-cover rounded-lg shadow-lg"
+        :alt="`صورة لـ ${event.title}`"
+        class="w-full h-48 lg:h-64 object-cover rounded-lg shadow-lg mx-auto lg:mx-0"
       />
     </div>
   </div>

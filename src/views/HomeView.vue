@@ -1,6 +1,6 @@
 <script setup>
 import { slides2 } from '@/components/EventCard'
-import Navbar from '@/components/navbar.vue'
+import Navbar from '@/components/Navbar.vue'
 import SmallNavbar from '@/components/smallNavbar.vue'
 </script>
 

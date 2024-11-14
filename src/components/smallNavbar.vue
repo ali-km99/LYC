@@ -2,8 +2,14 @@
 import { ref } from 'vue'
 
 const minu = ref(false)
-
+// const props = defineProps({
+//   color: {
+//     type: String,
+//     required: false,
+//   },
+// })
 const toggelMinu = () => {
+  console.log('minu')
   if (minu.value !== !minu.value) {
     minu.value = !minu.value
   }
@@ -24,21 +30,21 @@ const toggelMinu = () => {
           @click="toggelMinu"
           class="text-white flex flex-col space-y-1 p-2 transition duration-300"
         >
-          <span class="w-7 h-1 bg-white"></span>
+          <span class="w-7 h-1 bg-white rounded-md"></span>
           <span
-            class="w-7 h-1 bg-white duration-300 span"
+            class="w-7 h-1 bg-white duration-300 span rounded-md"
             :class="{ 'w-4': minu }"
           ></span>
           <span
             :class="{ 'w-2': minu }"
-            class="w-7 h-1 bg-white duration-500 span2"
+            class="w-7 h-1 bg-white duration-500 span2 rounded-md"
           ></span>
         </div>
       </div>
     </nav>
     <section
       id="hero"
-      class="h-[65vh] bg-no-repeat bg-left bg-nav-BG flex items-center relative"
+      class="h-56 bg-no-repeat bg-left bg-nav-BG flex items-center relative"
     >
       <ul
         v-if="minu"
@@ -78,7 +84,7 @@ const toggelMinu = () => {
         </li>
         <li
           v-motion-pop
-          :delay="500"
+          :delay="400"
           class="py-2 border-b-2 border-bluee-sec w-full text-center"
         >
           تواصل معنا
