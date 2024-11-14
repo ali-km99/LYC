@@ -1,16 +1,42 @@
 <script setup>
 import { slides2 } from '@/components/EventCard'
 import Navbar from '@/components/navbar.vue'
+import SmallNavbar from '@/components/smallNavbar.vue'
 </script>
 
 <template>
   <div class="body w-full h-[951px] bg-cover">
-    <Navbar />
+    <div class="hidden lg:block">
+      <Navbar />
+    </div>
+    <SmallNavbar />
+    <div
+      class="w-full text-center text-white font-semibold p-4 text-2xl -mt-20 sm:hidden"
+      style="text-shadow: 5px 4px 7px black"
+    >
+      <div class="bg-slate-300/25 full flex col-start-3 flex-col p-3">
+        <p class="text-2xl text-white font-bold text-center">
+          النادي الليبي لليخوت - LIBYA YACHT Club
+        </p>
+        <p class="text-yellow-50 text-end mt-4">
+          نادي اهلي متخصص في الرياضات والألعاب البحرية
+        </p>
+        <p class="text-yellow-50 text-end w-full">
+          معتمد من الهيئة العامة للشباب والرياضة
+        </p>
+        <!-- <button >
+        المزيد
+      </button> -->
+        <div class="self-start p-2 px-4">
+          <v-btn color="#FFC400">المزيد</v-btn>
+        </div>
+      </div>
+    </div>
     <div
       v-motion-slide-visible-bottom
       :delay="200"
       :duration="1500"
-      class="w-full grid grid-cols-3 mt-96 pr-5"
+      class="w-full grid-cols-3 lg:mt-96 mt-32 pr-5 hidden lg:grid"
     >
       <div class="bg-slate-300/25 full flex col-start-3 flex-col p-3">
         <p class="text-2xl text-white font-bold text-center">
@@ -33,32 +59,27 @@ import Navbar from '@/components/navbar.vue'
   </div>
   <section class="bg-white h-[25vh] py-10 flex justify-around mx-4">
     <img
-      class="hover:scale-105 duration-300"
-      width="180px"
+      class="hover:scale-105 duration-300 lg:w-[200px] lg:h-[100px] w-11 h-11"
       src="../assets/imeges/COM/IMG-20241029-WA0005.jpg"
       alt=""
     />
     <img
-      class="hover:scale-105 duration-300"
-      width="150spx"
+      class="hover:scale-105 duration-300 lg:w-[150px] lg:h-[100px] w-11 h-11"
       src="../assets/imeges/COM/IMG-20241029-WA0004.jpg"
       alt=""
     />
     <img
-      class="hover:scale-105 duration-300"
-      width="120px"
+      class="hover:scale-105 duration-300 lg:w-[120px] lg:h-[100px] w-11 h-11"
       src="../assets/imeges/COM/IMG-20241029-WA0002.jpg"
       alt=""
     />
     <img
-      class="hover:scale-105 duration-300"
-      width="90px"
+      class="hover:scale-105 duration-300 lg:w-[90px] lg:h-[100px] w-11 h-11"
       src="../assets/imeges/COM/IMG-20241029-WA0006.jpg"
       alt=""
     />
     <img
-      class="hover:scale-105 duration-300"
-      width="120px"
+      class="hover:scale-105 duration-300 lg:w-[120px] lg:h-[100px] w-11 h-11"
       src="../assets/imeges/COM/IMG-20241029-WA0007.jpg"
       alt=""
     />
@@ -93,24 +114,24 @@ import Navbar from '@/components/navbar.vue'
         </template>
         <v-carousel-item v-for="(slide, i) in slides2" :key="i">
           <v-sheet height="100%">
-            <div class="grid grid-cols-2 w-full px-8">
+            <div class="grid lg:grid-cols-2 w-full px-8">
               <img
                 v-if="i === 0"
                 src="../assets/imeges/IMG_6183.jpg"
                 alt=""
-                class="mx-auto h-96 object-cover rounded-lg shadow-lg"
+                class="mx-auto h-96 object-cover rounded-lg shadow-lg hidden lg:block"
               />
               <img
                 v-if="i === 1"
                 src="../assets/imeges/Group2.png"
                 alt=""
-                class="mx-auto h-96 object-cover rounded-lg shadow-lg"
+                class="mx-auto h-96 object-cover rounded-lg shadow-lg hidden lg:block"
               />
               <img
                 v-if="i === 2"
                 src="../assets/imeges/image6.jpg"
                 alt=""
-                class="mx-auto h-96 object-cover rounded-lg shadow-lg"
+                class="mx-auto h-96 object-cover rounded-lg shadow-lg hidden lg:block"
               />
               <div
                 class="flex justify-center items-center flex-col mt-14 h-full"

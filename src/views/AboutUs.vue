@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Navbar from '@/components/navbar.vue'
+import SmallNavbar from '@/components/smallNavbar.vue'
 
 const programs = [
   {
@@ -33,13 +34,16 @@ const objectives = [
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50">
+  <div class="min-h-screen bg-[#8897B9] lg:bg-white">
     <!-- Hero Section with Fixed Background -->
     <div class="hero-section relative mb-8">
       <div
-        class="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/40 to-[#3B82F6]/50"
+        class="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/20 to-[#3B82F6]/40"
       ></div>
-      <Navbar />
+      <div class="hidden lg:block">
+        <Navbar />
+      </div>
+      <div class="relative"><SmallNavbar /></div>
       <div class="container mx-auto px-4 py-20 relative z-10">
         <div class="text-white text-center">
           <h1 class="text-5xl font-bold mb-6">رحلة الريادة</h1>
@@ -50,7 +54,7 @@ const objectives = [
       </div>
     </div>
 
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 bg-[#8897B9] lg:bg-white">
       <!-- History Section -->
       <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
         <h2 class="text-2xl font-bold text-blue-900 mb-6 text-right">قصتنا</h2>
